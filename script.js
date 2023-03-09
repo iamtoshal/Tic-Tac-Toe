@@ -21,12 +21,10 @@ function initGame() {
     currentPlayer = 'X';
     gameGrid = ["", "", "", "", "", "", "", "", ""]
 
-    //UI ko empty karna padega
     boxes.forEach((box, index) => {
         box.innerText = "";
         boxes[index].style.pointerEvents = 'all';
 
-        //initialize box with css properties again
         box.classList = `box box${index + 1}`;
     });
     newGameBtn.classList.remove('active');
